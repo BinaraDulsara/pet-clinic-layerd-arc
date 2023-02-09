@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginAnchonePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.petClinic.controller.LoginFormController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="570.0" style="-fx-background-radius: 20px; -fx-border-width: 2px; -fx-border-color: #3498db; -fx-border-radius: 20px;">
+         <children>
+            <PasswordField fx:id="txtPassWord" layoutX="163.0" layoutY="221.0" prefHeight="25.0" prefWidth="217.0" promptText="password" style="-fx-background-radius: 20px; -fx-border-color: #3498db; -fx-border-radius: 20px;" />
+            <TextField fx:id="txtUserName" layoutX="163.0" layoutY="181.0" prefHeight="25.0" prefWidth="217.0" promptText="username" style="-fx-background-radius: 20px; -fx-border-color: #3498db; -fx-border-radius: 20px;" />
+            <Text fill="#3498db" layoutX="20.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+               <font>
+                  <Font name="Bell MT Bold" size="49.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="197.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Downloads/11-10-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="193.0" layoutY="274.0" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="157.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #3498db;" text="Login" textFill="#fffefe" />
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="349.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="351.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/lock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
